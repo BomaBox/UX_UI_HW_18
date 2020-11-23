@@ -1,3 +1,6 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .nav {
     background-color: #fdfffc;
     display: flex;
@@ -98,7 +101,76 @@ p {
     width: fit-content;
     padding: 20px;
 }
+
+
+.mySkills {
+    width: 100%;
+    min-height: 660px;
+    background-color: #d5f9f4;
+}
+
+#skillsGrid {
+    display: grid;
+    grid-template-rows: 30% 60% 10%;
+    grid-template-columns: 66% 34%;
+    grid-template-areas: 
+    "summary headshot"
+    "skillBullets headshot"
+    "knowMore headshot";
+    margin: 0 auto;
+    padding: 50px 75px;
+    min-height: 400px;
+ }
+
+ .skillChild {
+    margin: 0 auto;
+    padding: 10px;
+ }
+#summary {
+    grid-area: summary;
+    background-color: #fdfffc;
+    padding: 10px 30px;
+
+}
+#skillBullets {
+    grid-area: skillBullets;
+    background-color: #fdfffc;
+    padding: 10px 30px;
+}
+ #skillBullets img{
+    float: left;
+ }
+#skillBullets p {
+    padding: 16px 0px;
+}
+#headshot {
+    grid-area: headshot;
+    float: center;
+    padding: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+#knowMore {
+    grid-area: knowMore;
+}
+#knowMore ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#knowMore li {
+    display: inline-block;
+    color: #011627;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
 footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #fdfffc;
     display: flex;
     padding: 10px;
